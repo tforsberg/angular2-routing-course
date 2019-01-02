@@ -1,11 +1,12 @@
 "use strict";
-var router_1 = require('@angular/router');
-var dashboard_component_1 = require('./dashboard.component');
-var dashboard_users_component_1 = require('./users/dashboard-users.component');
-var dashboard_users_home_component_1 = require('./users/dashboard-users-home.component');
-var dashboard_user_details_component_1 = require('./users/dashboard-user-details.component');
-var auth_guard_service_1 = require('../shared/guards/auth-guard.service');
-var can_deactivate_guard_service_1 = require('../shared/guards/can-deactivate-guard.service');
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_1 = require("@angular/router");
+var dashboard_component_1 = require("./dashboard.component");
+var dashboard_users_component_1 = require("./users/dashboard-users.component");
+var dashboard_users_home_component_1 = require("./users/dashboard-users-home.component");
+var dashboard_user_details_component_1 = require("./users/dashboard-user-details.component");
+var auth_guard_service_1 = require("../shared/guards/auth-guard.service");
+var can_deactivate_guard_service_1 = require("../shared/guards/can-deactivate-guard.service");
 exports.dashboardRoutes = [
     {
         path: 'dashboard',

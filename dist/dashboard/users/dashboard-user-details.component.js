@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var user_service_1 = require('../../shared/services/user.service');
-var DashboardUserDetailsComponent = (function () {
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var user_service_1 = require("../../shared/services/user.service");
+var DashboardUserDetailsComponent = /** @class */ (function () {
     function DashboardUserDetailsComponent(service, route, router) {
         this.service = service;
         this.route = route;
@@ -46,8 +47,10 @@ var DashboardUserDetailsComponent = (function () {
     DashboardUserDetailsComponent = __decorate([
         core_1.Component({
             template: "\n    <div class=\"jumbotron\">\n\n      <div *ngIf=\"user\">\n        <h2>{{ user.name }}</h2>\n\n        <div class=\"form-group\">\n          <input type=\"text\" [(ngModel)]=\"editName\" class=\"form-control\">\n        </div>\n\n        <div class=\"form-group text-center\">\n          <button (click)=\"cancel()\" class=\"btn btn-danger\">Cancel</button>\n          <button (click)=\"save()\" class=\"btn btn-success\">Save</button>\n        </div>\n      </div>\n\n    </div>\n  "
-        }), 
-        __metadata('design:paramtypes', [user_service_1.UserService, router_1.ActivatedRoute, router_1.Router])
+        }),
+        __metadata("design:paramtypes", [user_service_1.UserService,
+            router_1.ActivatedRoute,
+            router_1.Router])
     ], DashboardUserDetailsComponent);
     return DashboardUserDetailsComponent;
 }());

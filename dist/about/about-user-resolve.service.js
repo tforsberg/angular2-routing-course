@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var user_service_1 = require('../shared/services/user.service');
-var AboutUserResolve = (function () {
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var user_service_1 = require("../shared/services/user.service");
+var AboutUserResolve = /** @class */ (function () {
     function AboutUserResolve(service, router) {
         this.service = service;
         this.router = router;
@@ -31,8 +32,8 @@ var AboutUserResolve = (function () {
         });
     };
     AboutUserResolve = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [user_service_1.UserService, router_1.Router])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [user_service_1.UserService, router_1.Router])
     ], AboutUserResolve);
     return AboutUserResolve;
 }());

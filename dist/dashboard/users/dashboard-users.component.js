@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var user_service_1 = require('../../shared/services/user.service');
-var DashboardUsersComponent = (function () {
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var user_service_1 = require("../../shared/services/user.service");
+var DashboardUsersComponent = /** @class */ (function () {
     function DashboardUsersComponent(service) {
         this.service = service;
     }
@@ -21,8 +22,8 @@ var DashboardUsersComponent = (function () {
     DashboardUsersComponent = __decorate([
         core_1.Component({
             template: "\n    <h2>Users Section</h2>\n    <p>Manage your users.</p>\n\n    <div class=\"row\">\n\n      <div class=\"col-sm-4\">\n\n        <div *ngIf=\"users\" class=\"list-group\">\n          <a *ngFor=\"let user of users\" \n            class=\"list-group-item\"\n            [routerLink]=\"['/dashboard/users', user.username]\">\n              {{ user.name }}\n          </a>\n        </div>\n        \n      </div>\n      <div class=\"col-sm-8\">\n\n        <router-outlet></router-outlet>\n\n      </div>\n\n    </div>\n  "
-        }), 
-        __metadata('design:paramtypes', [user_service_1.UserService])
+        }),
+        __metadata("design:paramtypes", [user_service_1.UserService])
     ], DashboardUsersComponent);
     return DashboardUsersComponent;
 }());

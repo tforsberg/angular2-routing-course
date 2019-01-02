@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var DashboardUsersHomeComponent = (function () {
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var DashboardUsersHomeComponent = /** @class */ (function () {
     function DashboardUsersHomeComponent() {
     }
     DashboardUsersHomeComponent.prototype.ngOnInit = function () {
@@ -17,8 +18,8 @@ var DashboardUsersHomeComponent = (function () {
     DashboardUsersHomeComponent = __decorate([
         core_1.Component({
             template: "\n    i am the dashboard users home\n  "
-        }), 
-        __metadata('design:paramtypes', [])
+        }),
+        __metadata("design:paramtypes", [])
     ], DashboardUsersHomeComponent);
     return DashboardUsersHomeComponent;
 }());

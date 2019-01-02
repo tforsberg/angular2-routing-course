@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var AboutUserComponent = (function () {
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var AboutUserComponent = /** @class */ (function () {
     function AboutUserComponent(route, router) {
         this.route = route;
         this.router = router;
@@ -26,8 +27,9 @@ var AboutUserComponent = (function () {
         core_1.Component({
             styles: ["\n    img     {\n      max-width: 300px;\n      margin: 20px auto;\n    }\n  "],
             template: "\n    <a (click)=\"goBack()\" class=\"btn btn-sm btn-info\">Go Back</a>\n    <div class=\"jumbotron text-center\" *ngIf=\"user\">\n      <h1>{{ user.name }} ({{ user.username }})</h1>\n\n      <img [src]=\"user.avatar\" class=\"img-responsive img-circle\">\n    </div>\n  "
-        }), 
-        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router])
+        }),
+        __metadata("design:paramtypes", [router_1.ActivatedRoute,
+            router_1.Router])
     ], AboutUserComponent);
     return AboutUserComponent;
 }());
